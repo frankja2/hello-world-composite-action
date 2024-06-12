@@ -23,6 +23,10 @@ runs:
       run: echo "random-number=$(echo $RANDOM)" >> $GITHUB_OUTPUT
       shell: bash
 
+    - name: chuj
+      shell: bash
+      run: echo "{{ vars.TEST }}"
+
     - name: Set GitHub Path
       run: echo "$GITHUB_ACTION_PATH" >> $GITHUB_PATH
       shell: bash
