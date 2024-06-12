@@ -25,7 +25,7 @@ runs:
 
     - name: chuj
       shell: bash
-      run: echo "{{ vars.TEST }}"
+      run: echo "${{ vars.TEST }}"
 
     - name: Set GitHub Path
       run: echo "$GITHUB_ACTION_PATH" >> $GITHUB_PATH
